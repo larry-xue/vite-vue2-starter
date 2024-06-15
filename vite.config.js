@@ -20,5 +20,11 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/foo/, '')
       }
     }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {},
+      less: {},
+    }
   }
 })

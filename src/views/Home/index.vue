@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-      <HelloWorld />
+    <HelloWorld />
   </div>
 </template>
 
@@ -14,3 +14,9 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+.home {
+  background-color: black;
+}
+</style>
