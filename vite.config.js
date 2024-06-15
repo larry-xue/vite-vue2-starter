@@ -7,6 +7,18 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': '/src'
+    },
+    extensions: ['.js', '.json', '.vue']
+  },
+  server: {
+    port: 5173,
+    proxy: {
+      '/foo': {
+        // check https://cn.vitejs.dev/config/server-options.html#server-proxy for details
+        target: 'http://localhost:5174',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/foo/, '')
+      }
     }
   }
 })
