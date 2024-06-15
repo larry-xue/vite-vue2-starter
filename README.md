@@ -1,7 +1,66 @@
-# Vue 3 + Vite
+# Vite + Vue2.7 + Vuex + Vue Router Starter
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a starter template for Vue.js 2.7 projects using Vite as the build tool, Vuex for state management, and Vue Router for routing. The Vue Router automatically integrates routes from the `views` directory based on the configuration.
 
-## Recommended IDE Setup
+## Features
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+- **Vite**: Fast and lightweight development server with modern build setup.
+- **Vue.js 2.7**: The progressive JavaScript framework for building user interfaces.
+- **Vuex**: State management pattern and library for Vue.js applications.
+- **Vue Router**: The official router for Vue.js with automatic integration of routes from `views` directory.
+
+## Getting Started
+
+### Prerequisites
+
+Vite requires Node.js version 18+ or 20+.
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone <repository-url>
+cd vite-vue2-vuex-router-starter
+npm install
+# or
+yarn install
+```
+
+### Development
+
+Start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open your browser and visit [http://localhost:5173](http://localhost:5173) to view your application.
+
+### Build for Production
+
+To build the application for production:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+The production-ready files will be generated in the `dist` directory.
+
+## Automatic Router Integration
+
+Vue Router automatically integrates routes from the `views` directory using dynamic import based on file naming conventions (`*.router.js`).
+
+### Custom Configuration
+
+For Vite-specific configurations and optimizations, refer to the `vite.config.js` file in the root directory.
+
+## Contributing
+
+Feel free to fork this repository, make changes, and submit a pull request. Contributions are welcome!
+
+---
